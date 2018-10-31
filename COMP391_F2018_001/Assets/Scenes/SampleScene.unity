@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 206203201}
   m_Layer: 0
   m_Name: Boundary
-  m_TagString: Untagged
+  m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 596196782}
   m_Layer: 0
   m_Name: Spaceship
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -514,6 +514,26 @@ PolygonCollider2D:
       - {x: -0.14307833, y: -0.35230112}
       - {x: -0.011127472, y: -0.3387264}
       - {x: 0.01, y: -0.29999998}
+--- !u!1 &1371927588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1761499034983102, guid: c66898ea845b94e4a8e4ebc72bf262f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1586357152}
+--- !u!114 &1371927589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371927588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8c1bff1eb0edf40afabd668abd7f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionAsteroid: {fileID: 1836869890929686, guid: 83557ff42f7a2b54d9115df2b777efa4,
+    type: 2}
+  explosionPlayer: {fileID: 1304748052769310, guid: 0b753f2f70286dc4190c784f063fd56e,
+    type: 2}
 --- !u!1001 &1586357152
 Prefab:
   m_ObjectHideFlags: 0
@@ -523,7 +543,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4391013791353122, guid: c66898ea845b94e4a8e4ebc72bf262f4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.65
+      value: 4.86
       objectReference: {fileID: 0}
     - target: {fileID: 4391013791353122, guid: c66898ea845b94e4a8e4ebc72bf262f4, type: 2}
       propertyPath: m_LocalPosition.y
@@ -551,11 +571,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4391013791353122, guid: c66898ea845b94e4a8e4ebc72bf262f4, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114290048794892058, guid: c66898ea845b94e4a8e4ebc72bf262f4,
-        type: 2}
-      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
