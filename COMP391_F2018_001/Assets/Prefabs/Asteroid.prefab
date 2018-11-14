@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 58049883895254108}
   - component: {fileID: 114290048794892058}
   - component: {fileID: 114451605614945236}
+  - component: {fileID: 114987762905572228}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1761499034983102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.752789, y: -0.2749729, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,6 +104,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tumble: 150
+--- !u!114 &114987762905572228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761499034983102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8c1bff1eb0edf40afabd668abd7f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionAsteroid: {fileID: 1836869890929686, guid: 83557ff42f7a2b54d9115df2b777efa4,
+    type: 2}
+  explosionPlayer: {fileID: 1304748052769310, guid: 0b753f2f70286dc4190c784f063fd56e,
+    type: 2}
+  scoreValue: 10
 --- !u!212 &212444851524850732
 SpriteRenderer:
   m_ObjectHideFlags: 1

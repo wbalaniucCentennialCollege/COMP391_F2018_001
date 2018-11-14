@@ -6,10 +6,22 @@ public class DestroyByContact : MonoBehaviour {
 
     public GameObject explosionAsteroid;
     public GameObject explosionPlayer;
+    public int scoreValue = 10;
+
+    private GameController gameControllerScript;
 
 	// Use this for initialization
 	void Start () {
-		
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+
+        if(gameControllerObject != null)
+        {
+            gameControllerScript = gameControllerObject.GetComponent<GameController>();
+        }
+        if(gameControllerScript == null)
+        {
+            Debug.Log("Cannot find GameController script on GameController object");
+        }
 	}
 
     // This trigger will run code when another object with a collider whose Is Trigger? boolean is set to true, 
@@ -31,6 +43,7 @@ public class DestroyByContact : MonoBehaviour {
 
         // Create the asteroid explosion
         Instantiate(explosionAsteroid, this.transform.position, this.transform.rotation);
+        gameControllerScript.AddScore(scoreValue);
 
         Destroy(other.gameObject);
         Destroy(this.gameObject);
