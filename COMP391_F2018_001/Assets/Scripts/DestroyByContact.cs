@@ -39,6 +39,7 @@ public class DestroyByContact : MonoBehaviour {
         {
             Instantiate(explosionPlayer, other.transform.position, other.transform.rotation);
             // Trigger GameOver logic
+            gameControllerScript.GameOver();    // Calls GameOver function in the gameControllerScript
         }
 
         // Create the asteroid explosion
