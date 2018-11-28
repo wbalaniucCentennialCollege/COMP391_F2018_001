@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+using UnityEngine.Audio;
+
 // This is where our game logic will be run
 public class GameController : MonoBehaviour {
 
@@ -21,6 +23,10 @@ public class GameController : MonoBehaviour {
     public Text scoreText;      // Reference to the Text component of the ScoreText UI object
     public Text gameOverText;   // Reference to the Text component of the GameOverText UI object
     public Text restartText;    // Reference to the Text component of the RestartText UI object
+
+    [Header("Audio Settings")]
+    public AudioMixerSnapshot gameAudioSnapshot;
+    public AudioMixerSnapshot pauseAudioSnapshot;
 
     // Private variables
     private int score;
@@ -39,6 +45,11 @@ public class GameController : MonoBehaviour {
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         // Check whether you are restarting
         if(restart)
         {

@@ -517,6 +517,8 @@ MonoBehaviour:
   scoreText: {fileID: 384101693}
   gameOverText: {fileID: 22019358}
   restartText: {fileID: 1791413863}
+  gameAudioSnapshot: {fileID: 0}
+  pauseAudioSnapshot: {fileID: 0}
 --- !u!4 &574089557
 Transform:
   m_ObjectHideFlags: 0
